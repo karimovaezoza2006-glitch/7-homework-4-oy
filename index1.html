@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/input.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-[#282C33]">
+    <!-- 1-Header section start -->
+        <header 
+    class="fixed top-0 left-0 w-full bg-gray-900 border-b border-gray-700 z-50"
+    data-aos="fade-down" data-aos-duration="1000">
+    <div class="container1 flex justify-between items-center  py-4">
+
+      <!-- Logo & Line -->
+      <div class="flex items-center space-x-2">
+        <!-- Line image -->
+        <img src="./images/Union.svg" alt="Line Icon">
+        <span class="text-white font-semibold text-lg">Elias</span>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="./index.html" class="text-gray-400 hover:text-purple-400 transition-all duration-300">
+          <span class="text-purple-400">#</span>home
+        </a>
+        <a href="./index1.html" class="text-gray-400 hover:text-purple-400 transition-all duration-300">
+          <span class="text-purple-400">#</span>works
+        </a>
+        <a href="./index2.html" class="text-gray-400 hover:text-purple-400 transition-all duration-300">
+          <span class="text-purple-400">#</span>about-me
+        </a>
+        <a href="#contacts" class="text-gray-400 hover:text-purple-400 transition-all duration-300">
+          <span class="text-purple-400">#</span>contacts
+        </a>
+
+        <!-- Language Dropdown -->
+        <div class="relative group cursor-pointer">
+          <div class="flex items-center space-x-1 text-gray-400 group-hover:text-purple-400 transition">
+            <span>EN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                 stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </div>
+
+          <!-- Dropdown menu -->
+          <div class="absolute right-0 mt-2 hidden group-hover:block bg-gray-800 border border-gray-700 rounded-md shadow-lg">
+            <a href="#" class="block px-3 py-1 hover:bg-gray-700 text-sm">EN</a>
+            <a href="#" class="block px-3 py-1 hover:bg-gray-700 text-sm">UZ</a>
+            <a href="#" class="block px-3 py-1 hover:bg-gray-700 text-sm">RU</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-gray-400 hover:text-purple-400 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+             stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class=" md:hidden flex flex-col items-center bg-gray-800 border-t border-gray-700">
+      <a href="./index.html" class="py-2 text-gray-300 hover:text-purple-400 transition"><span class="text-purple-400">#</span>home</a>
+      <a href="./index1.html" class="py-2 text-gray-300 hover:text-purple-400 transition"><span class="text-purple-400">#</span>works</a>
+      <a href="./index2.html" class="py-2 text-gray-300 hover:text-purple-400 transition"><span class="text-purple-400">#</span>about-me</a>
+      <a href="#contacts" class="py-2 text-gray-300 hover:text-purple-400 transition"><span class="text-purple-400">#</span>contacts</a>
+    </div>
+  </header>
+    <!-- 1-Header section end -->
+
+    <!-- 2-Complete apps section start -->
+     <section class="container1  text-white py-[65px]">
+  <h2 class="text-purple-400 text-3xl md:text-4xl font-bold mb-10" data-aos="fade-right">#complete-apps</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Card 1 -->
+    <div class="flex flex-col justify-between border border-gray-600 rounded hover:bg-gray-700 transition duration-300 min-h-[280px]" data-aos="fade-up">
+      <img src="./images/card1.png" alt="ChertNodes" class="mb-4 rounded-md object-cover w-full h-40"/>
+     <div class="p-4">
+         <p class="text-sm text-gray-400 mb-2">HTML SCSS Python Flask</p>
+      <h3 class="text-xl font-semibold mb-1">ChertNodes</h3>
+      <p class="text-sm text-gray-300">Minecraft servers hosting</p>
+      <div class="mt-4 flex gap-3">
+        <a href="#" class="inline-block border border-purple-500 px-3 py-1 text-sm rounded hover:bg-purple-500 transition duration-300">Live ↔</a>
+        <a href="#" class="inline-block border border-gray-500 px-3 py-1 text-sm rounded hover:bg-gray-600 transition duration-300">Cached &gt;</a>
+     </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex flex-col justify-between border border-gray-600 rounded  hover:bg-gray-700 transition duration-300 min-h-[280px]" data-aos="fade-up" data-aos-delay="100">
+      <img src="./images/card2.png" alt="Kahoot Answers" class="mb-4 rounded-md object-cover w-full h-40"/>
+     <div class="p-4">
+         <p class="text-sm text-gray-400 mb-2">CSS Express Node.js</p>
+      <h3 class="text-xl font-semibold mb-1">Kahoot Answers Viewer</h3>
+      <p class="text-sm text-gray-300">Get answers to your kahoot quiz</p>
+      <div class="mt-4 flex gap-3">
+        <a href="#" class="inline-block border border-purple-500 px-3 py-1 text-sm rounded hover:bg-purple-500 transition duration-300">Live ↔</a>
+     </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flex flex-col justify-between border border-gray-600 rounded  hover:bg-gray-700 transition duration-300 min-h-[280px]" data-aos="fade-up" data-aos-delay="200">
+      <img src="./images/card3.png" alt="ProtectX" class="mb-4 rounded-md object-cover w-full h-40"/>
+      <div class="p-4">
+        <p class="text-sm text-gray-400 mb-2">React Express Discord.js Node.js</p>
+      <h3 class="text-xl font-semibold mb-1">ProtectX</h3>
+      <p class="text-sm text-gray-300">Discord anti-crash bot</p>
+      <div class="mt-4 flex gap-3">
+        <a href="#" class="inline-block border border-gray-500 px-3 py-1 text-sm rounded hover:bg-gray-600 transition duration-300">Cached &gt;</a>
+      </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="flex flex-col justify-between border border-gray-600 rounded  hover:bg-gray-700 transition duration-300 min-h-[280px]" data-aos="fade-up">
+      <img src="./images/card4.png" alt="Kotik Bot" class="mb-4 rounded-full w-24 h-24 object-cover mx-auto"/>
+      <div class="p-4">
+        <p class="text-sm text-gray-400 mb-2">HTML CSS JS</p>
+      <h3 class="text-xl font-semibold mb-1 text-center">Kotik Bot</h3>
+      <p class="text-sm text-gray-300 text-center">Multi-functional discord bot</p>
+      <div class="mt-4 flex justify-center">
+        <a href="#" class="inline-block border border-purple-500 px-3 py-1 text-sm rounded hover:bg-purple-500 transition duration-300">Live ↔</a>
+      </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="flex flex-col justify-between border border-gray-600 rounded  hover:bg-gray-700 transition duration-300 min-h-[280px]" data-aos="fade-up" data-aos-delay="100">
+      <img src="./images/card5.png" alt="Elias Portfolio" class="mb-4 rounded-md object-cover w-full h-40"/>
+      <div class="p-4">
+        <p class="text-sm text-gray-400 mb-2">Vue TS Less</p>
+      <h3 class="text-xl font-semibold mb-1">Portfolio</h3>
+      <p class="text-sm text-gray-300">You’re using it rn</p>
+      <div class="mt-4 flex gap-3">
+        <a href="#" class="inline-block border border-purple-500 px-3 py-1 text-sm rounded hover:bg-purple-500 transition duration-300">Github ↔</a>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- 2-Complete apps section end -->
+
+    <!-- 3-Small projects section start -->
+     <section class="container1 py-12 text-white font-mono">
+  <h2 class="text-purple-400 text-3xl md:text-4xl font-bold mb-10" data-aos="fade-right">#small-projects</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Card 1 -->
+    <div class="border border-gray-600 p-4 rounded hover:bg-gray-700 transition duration-300" data-aos="fade-up">
+      <p class="text-sm text-gray-400 mb-2">Discord.js TS JS</p>
+      <h3 class="text-xl font-semibold mb-1">Bot boilerplate</h3>
+      <p class="text-sm text-gray-300 mb-4">Start creating scalable discord.js bot with typescript in seconds</p>
+      <a href="#" class="inline-block border border-purple-500 text-sm px-3 py-1 rounded hover:bg-purple-500 transition duration-300">Github ↔</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="border border-gray-600 p-4 rounded hover:bg-gray-700 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+      <p class="text-sm text-gray-400 mb-2">VUE CSS JS</p>
+      <h3 class="text-xl font-semibold mb-1">My blog</h3>
+      <p class="text-sm text-gray-300 mb-4">Front-end of my future blog website written in vue</p>
+      <a href="#" class="inline-block border border-purple-500 text-sm px-3 py-1 rounded hover:bg-purple-500 transition duration-300">Github ↔</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="border border-gray-600 p-4 rounded hover:bg-gray-700 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+      <p class="text-sm text-gray-400 mb-2">Figma</p>
+      <h3 class="text-xl font-semibold mb-1">Chess pro</h3>
+      <p class="text-sm text-gray-300 mb-4">Figma landing page about service for viewing chess tournaments</p>
+      <a href="#" class="inline-block border border-purple-500 text-sm px-3 py-1 rounded hover:bg-purple-500 transition duration-300">Figma ↔</a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="border border-gray-600 p-4 rounded hover:bg-gray-700 transition duration-300" data-aos="fade-up">
+      <p class="text-sm text-gray-400 mb-2">Figma</p>
+      <h3 class="text-xl font-semibold mb-1">Crash protect website</h3>
+      <p class="text-sm text-gray-300 mb-4">Figma template for website about anti-raid, anti-crash discord bot</p>
+      <a href="#" class="inline-block border border-purple-500 text-sm px-3 py-1 rounded hover:bg-purple-500 transition duration-300">Figma ↔</a>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="border border-gray-600 p-4 rounded hover:bg-gray-700 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+      <p class="text-sm text-gray-400 mb-2">HTML CSS</p>
+      <h3 class="text-xl font-semibold mb-1">CSS experiments</h3>
+      <p class="text-sm text-gray-300 mb-4">Collection of my different little projects in css</p>
+      <a href="#" class="inline-block border border-purple-500 text-sm px-3 py-1 rounded hover:bg-purple-500 transition duration-300">Live ↔</a>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="border border-gray-600 p-4 rounded hover:bg-gray-700 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+      <p class="text-sm text-gray-400 mb-2">Lua NeoVim</p>
+      <h3 class="text-xl font-semibold mb-1">Web Dev nvim config</h3>
+      <p class="text-sm text-gray-300 mb-4">Config for neovim perfect for web developer</p>
+      <a href="#" class="inline-block border border-purple-500 text-sm px-3 py-1 rounded hover:bg-purple-500 transition duration-300">Github ↔</a>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="border border-gray-600 p-4 rounded hover:bg-gray-700 transition duration-300" data-aos="fade-up">
+      <p class="text-sm text-gray-400 mb-2">Python Quart HTML</p>
+      <h3 class="text-xl font-semibold mb-1">Ooku</h3>
+      <p class="text-sm text-gray-300 mb-4">Simple link shortener with auth</p>
+      <a href="#" class="inline-block border border-purple-500 text-sm px-3 py-1 rounded hover:bg-purple-500 transition duration-300">Live ↔</a>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="border border-gray-600 p-4 rounded hover:bg-gray-700 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+      <p class="text-sm text-gray-400 mb-2">Figma</p>
+      <h3 class="text-xl font-semibold mb-1">School website</h3>
+      <p class="text-sm text-gray-300 mb-4">Figma template website for my school</p>
+      <a href="#" class="inline-block border border-purple-500 text-sm px-3 py-1 rounded hover:bg-purple-500 transition duration-300">Figma ↔</a>
+    </div>
+
+  </div>
+    </section>
+    <!-- 3-Small projects section end -->
+
+    <!-- 4-Footer section start -->
+      <footer class=" text-gray-300 font-mono border-t border-gray-700 py-10" 
+          data-aos="fade-up" data-aos-duration="1000">
+
+    <div class="container1 flex flex-col md:flex-row md:justify-between md:items-start space-y-6 md:space-y-0">
+
+      <!-- Left part -->
+      <div>
+        <div class="flex items-center space-x-2">
+          <img src="./images/Union.svg" 
+               alt="User Icon" class="w-4 h-4">
+          <span class="font-semibold text-white">Elias</span>
+          <a href="mailto:elias@elias-dev.ml" 
+             class="text-gray-400 hover:text-gray-200 font-normal text-base text-[#abb2bf];">
+            elias@elias-dev.ml
+          </a>
+        </div>
+        <p class="font-normal text-base text-[#abb2bf]">
+          Web designer and front-end developer
+        </p>
+      </div>
+
+      <!-- Right part -->
+      <div>
+        <h3 class="font-medium text-2xl text-white">Media</h3>
+        <div class="flex items-center space-x-4">
+          <a href="#"><img src="./images/Github.svg" 
+                           alt="GitHub" class="opacity-70 hover:opacity-100 transition"></a>
+          <a href="#"><img src="./images/Figma.svg" 
+                           alt="Figma" class=" opacity-70 hover:opacity-100 transition"></a>
+          <a href="#"><img src="./images/Vector.svg" 
+                           alt="Discord" class="opacity-70 hover:opacity-100 transition"></a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Bottom text -->
+    <div class="text-center text-gray-500 text-sm mt-8">
+      © Copyright 2022. Made by Elias
+    </div>
+  </footer>
+    <!-- 4-Footer section end -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+    <script src="./main.js"></script>
+    <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    AOS.init();
+  </script>
+</body>
+</html>
